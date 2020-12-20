@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Lihat" >
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/farid2"
+        android:layout_marginTop="40dp"
+        android:id="@+id/bg_coffe"
+        android:layout_centerHorizontal="true"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/bg_coffe"
+        android:stretchColumns="1">
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nomor Cabang"
+                android:textSize="16sp"
+                android:textColor="@color/brown_dark"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_nocab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown_light"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil Nomor Cabang">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nama Cabang"
+                android:textSize="16sp"
+                android:textColor="@color/brown_dark"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_namacab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown_light"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil Nama Cabang">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Alamat Cabang"
+                android:textSize="16sp"
+                android:textColor="@color/brown_dark"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_alamatcab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown_light"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil Alamat Cabang">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Jam Buka-Tutup"
+                android:textSize="16sp"
+                android:textColor="@color/brown_dark"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_waktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown_light"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil Waktu Buka">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fasilitas"
+                android:textColor="@color/brown_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text=":"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lihat_fasilitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown_light"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Tampil Fasilitas">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_marginTop="40dp">
+            <Button
+                android:id="@+id/btn_lihat_back"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Back" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
